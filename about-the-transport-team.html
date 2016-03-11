@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>YHNN</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimal-ui">
+        <meta http-equiv="cleartype" content="on">
+        <link rel="apple-touch-icon" href="Icon-72@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Icon-72@2x.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Icon@2x.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="Icon.png">
+        <link rel="shortcut icon" href="Icon-72@2x.png">
+
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="phonegap.js"></script>
+    </head>
+    <body class="frequently">
+    
+    	<header>
+    		<a href="index.html" class="homeLink"><img src="images/header_home_icon.jpg" width="20"/></a>
+    		<a href="index.html" class="textLink">Back to home</a>
+    		<span class="bottomShadow"></span>
+    	</header>
+    	
+	    <div class="heading transport_team">
+	    	<img src="images/transport_team_embrace_logo.jpg"/>
+	    	<h2>Embrace Yorkshire & Humber Infant & Children's Transport Service</h2>
+	    </div><!-- heading -->
+	    
+	    <div class="contentArea">
+            <h6>Embrace Yorkshire & Humber Paediatric & Neonatal Transport Service</h6>
+            <p>The Embrace transport team is made up of highly skilled staff with the appropriate specialist skills to safely care for your baby during their transfer between hospitals.</p>
+            <p>Once the Embrace team arrive at a hospital they receive a full handover from the staff who are currently looking after your baby.  They will then concentrate on assessing, stabilising and preparing your baby for the transfer.  At this time the Embrace team will be busy but they will introduce themselves to you, keep you informed about what is happening and answer any questions you might have.  The whole process may take some time so do not be alarmed, it is better that everything is thoroughly prepared to ensure a safe transfer.</p>
+            <p>During the transfer of your baby, specialist equipment will be used and the ambulances used to transport babies have been specially adapted for this purpose.  There may be the opportunity for one parent to travel in the ambulance and, if you do travel in the ambulance then you will only be allowed to take one small piece of hand luggage.  Occasionally it may be necessary to use a helicopter or aeroplane to transfer your baby, especially if the distances involved are great.</p>
+            <p>Once your baby arrives at the receiving hospital the Embrace team will give details of what has happened before and during the transfer to the medical and nursing staff and your baby will then be moved to their new cot or incubator.  If you have not been able to travel in the ambulance with your baby, the Embrace team will try to contact you to let you know that baby has arrived safely and you will also be given an update on your baby’s condition.</p>
+            <p>Please do not hesitate to speak to us about any aspect of your baby’s transfer and, if you have any comments or suggestions please, use the feedback forms that the team will give you.  Complaints and advice are dealt with by the patient advice and liaison service (PALS) on 0114 2717594.</p>
+            <h4 class="feedback"><a href="#" onclick="var ref = window.open('http://dev.clicky.co.uk/yhnn/documents/feedback-to-embrace.pdf', '_system'); return false;">Feedback to the transfer team &raquo;</a></h4>
+	    	<img src="images/transport_team_camts_logo.png" class="fullWidthImage bottom"/>
+	    </div><!-- contentArea -->
+	    
+	    <footer>
+	    	<span class="topShadow"></span>
+    		<a href="index.html" class="homeLink"><img src="images/footer_home_icon.png" width="20"/></a>
+    		<a href="index.html" class="textLink">Change language</a>
+	    </footer>
+    	
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+        
+        <script type="text/javascript">
+        	$(function(){
+	        	$('.accordion .question h2').click(function(){
+	        		$('.accordion .question p').slideUp();
+	        		$('.accordion .question h2').removeClass('active')
+		        	$(this).siblings('p').slideToggle().toggleClass('active');
+	        		$(this).toggleClass('active')
+	        	});
+        	});
+        </script>
+        
+    </body>
+</html>

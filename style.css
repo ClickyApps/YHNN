@@ -1,0 +1,329 @@
+/*
+Theme Name: TVWNODN: App
+Theme URI: http://app.nornet.org.uk
+Author: Clicky Media
+Author URI: http://www.clicky.co.uk/
+Developers: Josh Diamond
+Version: 1.1
+*/
+
+/* CSS Reset */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden] { display: none; }
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+mark { background: #ff0; color: #000; }
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0; padding: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+a, input { outline: 0; }
+a:focus, input:focus { outline: none; }
+
+/* Font Face */
+@font-face { font-family: 'Open'; src: url('webfonts/opensans-regular-webfont.eot'); src: url('webfonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-regular-webfont.woff') format('woff'), url('webfonts/opensans-regular-webfont.ttf') format('truetype'), url('webfonts/opensans-regular-webfont.svg#open_sansregular') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenBold'; src: url('webfonts/opensans-bold-webfont.eot'); src: url('webfonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-bold-webfont.woff') format('woff'), url('webfonts/opensans-bold-webfont.ttf') format('truetype'), url('webfonts/opensans-bold-webfont.svg#open_sansbold') format('svg'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'OpenLight'; src: url('webfonts/opensans-light-webfont.eot'); src: url('webfonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('webfonts/opensans-light-webfont.woff') format('woff'), url('webfonts/opensans-light-webfont.ttf') format('truetype'), url('webfonts/opensans-light-webfont.svg#open_sanslight') format('svg'); font-weight: normal; font-style: normal; }
+
+/* Main Styles */
+body { font-family: 'OpenLight'; background: #eee; padding-bottom: 43px; float: left; width: 100%; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+strong { font-weight: normal; font-family: 'OpenBold'; }
+.home { background: #4085c4 url(images/icon_background.png) repeat; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; position: relative; }
+.home .leftArrow { position: absolute; top: 265px; left: 50%; margin-left: -150px; }
+.home .rightArrow { position: absolute; top: 265px; left: 50%; margin-left: 125px; }
+.home .logo { width: 100%; text-align: center; margin: 48px 0 28px 0; }
+.home h1 { font-size: 23px; line-height: 30px; font-family: 'OpenBold'; color: #fff; text-align: center; margin: 0; }
+.home p { font-size: 14px; line-height: 19px; color: #fff; text-align: center; margin: 20px 0 0 0; }
+.home p.choose { margin-bottom: 15px; font-size: 15px; }
+.home footer { position: fixed; bottom: 0; left: 0; width: 100%; padding: 5px 0; background: #fff; }
+.home footer .map { float: left; margin: 0 0 0 10px; }
+.home footer .map:hover { opacity: 0.8; }
+.home footer .map img { float: left; }
+.home footer a { float: right; margin: 9px 15px 0 0; }
+.home footer a.left { float: left; margin: 9px 0 0 15px; }
+.home .languageChoice { margin: 35px auto 0 auto; width: 230px; }
+.home .languageChoice .flag { float: left; width: 60px; height: 40px; background: #fff; background: url(images/home_flags_english.jpg) no-repeat; background-size: 60px 40px; -webkit-background-size: 60px 40px; -moz-background-size: 60px 40px; -o-background-size: 60px 40px; }
+.home .languageChoice .flag:hover { opacity: 0.8; }
+.home .languageChoice .flag.topMiddle { margin-left: 25px; background: url(images/home_flags_polish.jpg) no-repeat; background-size: 60px 40px; -webkit-background-size: 60px 40px; -moz-background-size: 60px 40px; -o-background-size: 60px 40px; }
+.home .languageChoice .flag.topRight { float: right; background: url(images/home_flags_urdu.jpg) no-repeat; background-size: 60px 40px; -webkit-background-size: 60px 40px; -moz-background-size: 60px 40px; -o-background-size: 60px 40px; }
+.home .languageChoice .flag.onlyOne { float: left; margin: 0 85px; }
+.home .links { text-align: center; margin-top: 35px; float: left; padding: 0 5% 47px 5%; width: 90%; }
+.home .links p { margin: 0 0 20px 0; }
+.home .links a { font-size: 16px; line-height: 24px; color: #fff; text-decoration: none; border-bottom: 1px dashed #7dacd4; margin-bottom: 30px; }
+.home .links a:hover { border-color: transparent; }
+.home .links a.second { margin-bottom: 0; }
+.home a.list-hospitals { display: block; padding: 20px 20px 20px 20px; text-align: center; text-decoration: none; background: transparent; border-radius: 8px; border: 3px solid #fff; color: #fff; font-weight: 600; font-family: 'Open'; }
+.home a.list-hospitals:hover {background: #fff; color: #4085c4;}
+
+header { float: left; width: 100%; background: #fff; padding: 12px 0; position: relative; z-index: 10; }
+header .bottomShadow { position: absolute; bottom: -8px; left: 0; width: 100%; background: url(images/standard_drop_shadow.png) no-repeat center top; height: 8px; }
+header .homeLink { float: left; margin: 1px 0 0 15px; }
+header .homeLink:hover { opacity: 0.8; }
+header .homeLink img { float: left; }
+header .textLink { float: right; font-size: 13px; color: #666; text-decoration: none; margin-right: 15px; border-bottom: 1px dashed transparent; }
+header .textLink:hover { border-color: #666; }
+
+footer { width: 100%; background: #408ac9; padding: 12px 0; position: fixed; bottom: 0; left: 0; z-index: 100; }
+footer .topShadow { position: absolute; top: 0; left: 0; width: 100%; background: url(images/standard_drop_shadow.png) no-repeat center top; height: 8px; }
+footer .homeLink { float: left; margin: 1px 0 0 15px; }
+footer .homeLink:hover { opacity: 0.8; }
+footer .homeLink img { float: left; }
+footer .textLink { float: right; font-size: 13px; color: #fff; text-decoration: none; margin-right: 15px; border-bottom: 1px dashed transparent; }
+footer .textLink:hover { border-color: #fff; }
+footer.tabs { background-image: url(images/icon_background.png); background-repeat: repeat; padding: 0; }
+footer.tabs a.tab { float: left; margin: 0 1.5%; width: 21%; text-align: center; text-decoration: none; padding: 5px 0.5%; height: 60px; position: relative; z-index: 10; }
+footer.tabs a.tab p { margin: 0px 0 0 0; font-size: 10px; line-height: 13px; color: #fff; }
+footer.tabs a.tab.facilities img { margin: 6px 0; }
+footer.tabs a.tab.maps img { margin: 5px 0 4px 0; }
+footer.tabs a.tab.visiting img { margin: 2px 0 2px 0; }
+footer.tabs a.tab.support img { margin: 6px 0; }
+footer.tabs a.tab.active { background: #74B0B0; height: 65px; }
+footer.tabs a.tab.active span { position: absolute; top: -20px; left: 0; width: 0; height: 0; border-left: 35px solid transparent; border-right: 35px solid transparent; border-bottom: 20px solid #74B0B0; }
+
+.hospital-list .hospitals { float: left; width: 100%; }
+.hospital-list .hospitals .hospital { background: #000; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; width: 50%; height: 59px; padding: 19px 0; text-decoration: none; float: left; cursor: pointer; }
+.hospital-list .hospitals .hospital:hover { opacity: 0.9; }
+.hospital-list .hospitals .hospital p { float: left; margin: 0 0 0 15px; color: #fff; font-size: 15px; line-height: 21px; font-family: 'Open'; }
+.hospital-list .hospitals .hospital small { float: left; clear: left; margin: 3px 0 0 15px; color: #fff; font-size: 12px; }
+.hospital-list .hospitals .hospital.one { background-color: #1a3566; }
+.hospital-list .hospitals .hospital.two { background-color: #408ac9; }
+.hospital-list .hospitals .hospital.three { background-color: #74afaf; }
+.hospital-list .hospitals .hospital.four { background-color: #beca59; }
+.hospital-list .hospitals .hospital.five { background-color: #d5a007; }
+.hospital-list .hospitals .hospital.six { background-color: #e54a66; }
+.hospital-list .hospitals .hospital.seven { background-color: #8b4583; }
+.hospital-list .hospitals .hospital.eight { background-color: #1b3566; }
+.hospital-list .hospitals .hospital.nine { background-color: #c1ac93; }
+.hospital-list .hospitals .hospital.ten { background-color: #74afaf; }
+.hospital-list .hospitals .hospital.eleven { background-color: #408ac9; }
+.hospital-list .hospitals .hospital.nine p { font-size: 14px; }
+
+.hospitalContainer { float: left; width: 100%; height: 300px; position: relative; overflow: hidden; }
+.hospitalContainer > img { position: absolute; top: 0; left: 0; width: auto; height: 100%; z-index: 5; }
+.hospitalContainer a.feedback { position: absolute; z-index: 10; background: #74aaaa url(images/icon_background.png) repeat; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; padding: 12px; border-radius: 6px; width: 80px; font-size: 16px; color: #fff; text-decoration: none; line-height: 20px; text-align: center; left: 25px; top: 14px; }
+
+.hospitalContainer a.feedback span.text { font-family: 'OpenBold'; }
+.hospitalContainer a.feedback span.arrow { width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-right: 12px solid #fff; position: absolute; top: 20px; left: -12px; }
+
+.hospitalContainer .title { position: absolute; bottom: 72px; left: 0; width: 88%; padding: 15px 6%; z-index: 10; background: rgba(0,0,0,0.5); }
+.hospitalContainer .title h1 { margin: 0; font-size: 18px; color: #fff; }
+.hospitalContainer .title h5 { margin: 4px 0 0 0; font-size: 13px; color: #fff; }
+.hospitalContainer .details { position: absolute; bottom: 0; left: 0; width: 88%; padding: 12px 6%; z-index: 10; background: #000; }
+.hospitalContainer .details img { float: left; margin-right: 10px; }
+.hospitalContainer .details img.second { margin-left: 25px; }
+.hospitalContainer .details h6 { margin: 3px 0; font-size: 13px; color: #fff; float: left; width: 100%; }
+.hospitalContainer .details h6 a { color: #fff; text-decoration: none; }
+
+.queen-elizabeth-hospital .hospitalContainer .details h6 { font-size: 12px; }
+
+.contentArea { padding: 22px 7%; padding-bottom: 50px; width: 86%; float: left; background: #fff; }
+.contentArea h3 { font-size: 18px; line-height: 24px; color: #2D7FAC; margin: 30px 0 15px 0; }
+.contentArea h3.first { margin-top: 0; }
+.contentArea h6 { font-size: 15px; line-height: 21px; color: #2D7FAC; margin: 0 0 15px 0; }
+.contentArea p { font-size: 12px; line-height: 18px; color: #3A4353; margin: 0 0 15px 0; }
+.contentArea p a { font-family: 'OpenBold'; color: #3A4353; text-decoration: none; }
+.contentArea img.fullWidthImage { width: 100%; height: auto; margin: 0 0 20px 0; }
+.contentArea img.fullWidthImage.bottom { margin: 20px 0px 0px 0px; }
+.contentArea ul { list-style: none; padding: 0; margin: 10px 0 40px 0; }
+.contentArea ul li { font-size: 12px; line-height: 18px; color: #3A4353; margin: 0 0 10px 0; padding-left: 10px; }
+.contentArea ul li a { color: #3A4353; text-decoration: underline; }
+.contentArea ul li:before { content: '■'; color: #2D7FAC; margin-right: 5px; }
+.contentArea h4 { margin: 30px 0 30px 0; background: url(images/hospital_download_icon.png) no-repeat left center; padding: 0 0 0 30px; }
+.contentArea h4 a { color: #2D7FAC; font-size: 16px; text-decoration: none; }
+.contentArea h4 a:hover { border-bottom: 1px dotted #2D7FAC; }
+.contentArea h4.google { background: url(images/hospital_google_maps_icon.png) no-repeat left center; }
+.contentArea h4.feedback { background: url(images/hospital_feedback_icon.png) no-repeat left center; }
+
+.hospital .contentArea strong { font-size: 14px; line-height: 21px; }
+.hospital .contentArea ul { margin-top: 0; margin-bottom: 20px; }
+.hospital .contentArea .ward { display: none; }
+.hospital .wardSwitch { float: left; width: 100%; padding: 0 0 7px 0; display: none; background: #fff; }
+.hospital .wardSwitch a { float: left; width: 29.3333333%; background: #4085c4 url(images/icon_background.png) repeat; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; text-align: center; color: #fff; font-size: 12px; text-decoration: none; padding: 10px 2%; position: relative; min-height: 48px; }
+.hospital .wardSwitch a.active { background: #1b3566; }
+.hospital .wardSwitch a.active span { position: absolute; bottom: -10px; left: 50%; margin-left: -20px; width: 0; height: 0; border-left: 20px solid transparent; border-right: 20px solid transparent; border-top: 10px solid #1b3566; }
+.hospital .wardSwitch a.first { padding-top: 26px; padding-bottom: 26px; min-height: 16px; }
+.hospital .wardSwitch a.second { padding-top: 18px; padding-bottom: 18px; min-height: 32px; }
+.hospital .contentArea .wardOne { display: block; }
+
+body.feedback { background: #74aaaa url(images/icon_background.png) repeat; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; }
+.feedback .title { background: #fff; border-radius: 6px; padding: 10px 18px; float: left; padding-right: 36px; position: relative; margin: 21px 0 0 15px; -webkit-transform: rotate(358deg); -moz-transform: rotate(358deg); -o-transform: rotate(358deg); writing-mode: lr-tb; }
+.feedback .title h1 { color: #557C80; margin: 0; font-family: 'OpenBold'; font-size: 22px; }
+.feedback .questions > p { color: #fff; float: left; width: 90%; padding: 0 5%; font-size: 14px; line-height: 19px; margin: 16px 0 0 0; }
+.feedback .title h3 { font-size: 17px; color: #74AAAA; margin: 0; }
+.feedback .title .arrow { width: 0; height: 0; border-top: 12px solid transparent; border-bottom: 12px solid transparent; border-left: 12px solid #fff; position: absolute; top: 26px; right: -11px; }
+.feedback #feedbackForm { float: left; width: 90%; padding: 0 5%; margin-top: 23px; }
+.feedback #feedbackForm .question { float: left; width: 100%; margin-bottom: 40px; }
+.feedback #feedbackForm .question.four, .feedback #feedbackForm .question.five, .feedback #feedbackForm .question.six, .feedback #feedbackForm .question.seven, .feedback #feedbackForm .question.eight { display: none; }
+.feedback #feedbackForm .question p { margin: 0; font-size: 16px; line-height: 21px; color: #fff; margin-bottom: 18px; margin-left: 5px; }
+.feedback #feedbackForm .question strong { font-weight: normal; font-family: 'OpenBold'; display: block; }
+.feedback #feedbackForm .question .noUi-base { width: 94% }
+.feedback #feedbackForm .question .noUi-target { height: 4px; width: 100%; float: left; border-radius: 0; border: 0; background: #fff; box-shadow: none; -webkit-box-shadow: none; }
+.feedback #feedbackForm .question .noUi-horizontal .noUi-handle { width: 20px; height: 24px; background: #fff; border-radius: 2px; border: 0; box-shadow: none; -webkit-box-shadow: none; top: -10px; left: 0; }
+.feedback #feedbackForm .question .number { float: left; font-size: 16px; color: #fff; margin-top: 10px; }
+.feedback #feedbackForm .question .number.five { float: right; }
+.feedback #feedbackForm .question textarea { width: 90%; padding: 5%; font-size: 12px; line-height: 18px; color: #3A4353; height: 100px; outline: 0; border: 0; }
+.feedback #feedbackForm a#nextQuestions { float: right; background: #fff; font-size: 15px; border-radius: 4px; padding: 6px 12px; text-decoration: none; color: #557C80; font-family: 'OpenBold'; position: relative; margin-right: 5px; margin-bottom: 20px; }
+.feedback #feedbackForm a#nextQuestions span { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 7px solid #fff; position: absolute; top: 10px; right: -7px; }
+.feedback #feedbackForm a#backQuestions { display:none; float: left; background: #fff; font-size: 15px; border-radius: 4px; padding: 6px 12px; text-decoration: none; color: #557C80; font-family: 'OpenBold'; position: relative; margin-left: 5px; margin-bottom: 20px; }
+.feedback #feedbackForm a#backQuestions span { display:none; width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-right: 7px solid #fff; position: absolute; top: 10px; left: -7px; }
+.feedback #feedbackForm input[type=submit] { float: right; background: #fff; font-size: 15px; border-radius: 4px; padding: 6px 12px; color: #557C80; font-family: 'OpenBold'; position: relative; margin-bottom: 20px; border: 0; display: none; }
+.feedback #feedbackForm input[type=submit] span { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid transparent; border-left: 7px solid #fff; position: absolute; top: 10px; right: -7px; }
+
+.heading { float: left; width: 100%; height: 160px; overflow: hidden; position: relative; }
+.heading img { float: left; width: 100%; }
+.heading.transport_team { height: auto; background: #fff; }
+.heading.transport_team img { margin: 20px 5% 76px 5%; width: 90%; }
+.heading h2 { position: absolute; left: 0; bottom: 0; background: rgba(45,127,172,0.82) url(images/icon_background.png) repeat; background-size: 155px 105px; -webkit-background-size: 155px 105px; -moz-background-size: 155px 105px; -o-background-size: 155px 105px; padding: 13px 6%; margin: 0; color: #fff; font-size: 19px; width: 88%; }
+
+.accordion { float: left; width: 100%; }
+.accordion .question { float: left; width: 100%; background: #ffffff; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlN2U3ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); background: -moz-linear-gradient(top,  #ffffff 0%, #e7e7e7 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e7e7)); background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); background: -o-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); background: -ms-linear-gradient(top,  #ffffff 0%,#e7e7e7 100%); background: linear-gradient(to bottom,  #ffffff 0%,#e7e7e7 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); }
+.accordion .question h2 { font-size: 11px; line-height: 20px; color: #1B3566; margin: 0; float: left; width: 100%; padding: 15px 60px 15px 20px; cursor: pointer; font-family: 'OpenBold'; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; position: relative; }
+.accordion .question h2 span { position: absolute; top: 50%; margin-top: -7px; right: 20px; font-family: 'OpenBold'; color: #1B3566; font-size: 32px; line-height: 10px; }
+.accordion .question h2.active span { -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); writing-mode: lr-tb; margin-top: -3px; right: 17px; }
+.accordion .question > div { display: none; float: left; width: 100%; }
+.accordion .question > div h2 { padding-left: 40px; }
+.accordion .question p { float: left; width: 87%; padding: 0 6.5%; font-size: 12px; line-height: 18px; margin: 0 0 25px 0; color: #3A4353; }
+.accordion .question p a { font-family: 'OpenBold'; color: #3A4353; text-decoration: none; }
+.accordion .question ul { width: 87%; padding: 0 6.5%; list-style: none; margin: 10px 0 40px 0; }
+.accordion .question ul li { font-size: 12px; line-height: 18px; color: #3A4353; margin: 0 0 10px 0; padding-left: 10px; }
+.accordion .question ul li a { color: #3A4353; text-decoration: underline; }
+.accordion .question ul li:before { content: '■'; color: #2D7FAC; margin-right: 5px; }
+.accordion .question.one h2, .accordion .question.one span { color: #1B3566; }
+.accordion .question.two h2, .accordion .question.two span { color: #4085C4; }
+.accordion .question.three h2, .accordion .question.three span { color: #74AAAA; }
+.accordion .question.four h2, .accordion .question.four span { color: #d5a007; }
+.accordion .question.five h2, .accordion .question.five span { color: #E04A66; }
+
+/* Colours */
+.hospital-list .hospitals .hospital.one, .one .hospitalContainer a.feedback, .one footer.tabs a.tab.active, body.feedback.one                     { background-color: #1a3566; }
+.hospital-list .hospitals .hospital.two, .two .hospitalContainer a.feedback, .two footer.tabs a.tab.active, body.feedback.two                     { background-color: #408ac9; }
+.hospital-list .hospitals .hospital.three, .three .hospitalContainer a.feedback, .three footer.tabs a.tab.active, body.feedback.three             { background-color: #74afaf; }
+.hospital-list .hospitals .hospital.four, .four .hospitalContainer a.feedback, .four footer.tabs a.tab.active, body.feedback.four                 { background-color: #beca59; }
+.hospital-list .hospitals .hospital.five, .five .hospitalContainer a.feedback, .five footer.tabs a.tab.active, body.feedback.five                 { background-color: #d5a007; }
+.hospital-list .hospitals .hospital.six, .six .hospitalContainer a.feedback, .six footer.tabs a.tab.active, body.feedback.six                     { background-color: #e54a66; }
+.hospital-list .hospitals .hospital.seven, .seven .hospitalContainer a.feedback, .seven footer.tabs a.tab.active, body.feedback.seven             { background-color: #8b4583; }
+.hospital-list .hospitals .hospital.eight, .eight .hospitalContainer a.feedback, .eight footer.tabs a.tab.active, body.feedback.eight          	  { background-color: #1a3566; }
+.hospital-list .hospitals .hospital.nine, .nine .hospitalContainer a.feedback, .nine footer.tabs a.tab.active, body.feedback.nine                 { background-color: #408ac9; }
+.hospital-list .hospitals .hospital.ten, .ten .hospitalContainer a.feedback, .ten footer.tabs a.tab.active, body.feedback.ten                     { background-color: #74afaf; }
+.hospital-list .hospitals .hospital.eleven, .eleven .hospitalContainer a.feedback, .eleven footer.tabs a.tab.active, body.feedback.eleven         { background-color: #beca59; }
+.hospital-list .hospitals .hospital.twelve, .twelve .hospitalContainer a.feedback, .twelve footer.tabs a.tab.active, body.feedback.twelve         { background-color: #d5a007; }
+.hospital-list .hospitals .hospital.thirteen, .thirteen .hospitalContainer a.feedback, .thirteen footer.tabs a.tab.active, body.feedback.thirteen { background-color: #e54a66; }
+.hospital-list .hospitals .hospital.fourteen, .fourteen .hospitalContainer a.feedback, .fourteen footer.tabs a.tab.active, body.feedback.fourteen { background-color: #8b4583; }
+.hospital-list .hospitals .hospital.fifteen, .fifteen .hospitalContainer a.feedback, .fifteen footer.tabs a.tab.active, body.feedback.fifteen    { background-color: #1a3566; }
+.hospital-list .hospitals .hospital.sixteen, .sixteen .hospitalContainer a.feedback, .sixteen footer.tabs a.tab.active, body.feedback.sixteen     { background-color: #408ac9; }
+.hospital-list .hospitals .hospital.seventeen, .seventeen .hospitalContainer a.feedback, .seventeen footer.tabs a.tab.active, body.feedback.seventeen { background-color: #74afaf; }
+.hospital-list .hospitals .hospital.eighteen, .eighteen .hospitalContainer a.feedback, .eighteen footer.tabs a.tab.active, body.feedback.eighteen  { background-color: #beca59; }
+.hospital-list .hospitals .hospital.nineteen, .nineteen .hospitalContainer a.feedback, .nineteen footer.tabs a.tab.active, body.feedback.nineteen  { background-color: #d5a007; }
+.hospital-list .hospitals .hospital.twenty, .twenty .hospitalContainer a.feedback, .twenty footer.tabs a.tab.active, body.feedback.twenty { background-color: #e54a66; }
+.hospital-list .hospitals .hospital.twenty_one, .twenty_one .hospitalContainer a.feedback, .twenty_one footer.tabs a.tab.active, body.feedback.twenty_one     { background-color: #c1ac93; }
+
+.hospital-list .hospitals .hospital.twenty_two { background: #cccccc url(images/hospital_list_map.png) no-repeat center center; background-size: 90px 78px; -webkit-background-size: 90px 78px; -moz-background-size: 90px 78px; -o-background-size: 90px 78px; }
+.hospital-list .hospitals .hospital.twenty_two p {  margin-top: 23px; color: #808080; }
+
+.hospital-list .hospitals .hospital.transfer_team p { font-size: 13px; }
+
+.one      a.feedback span.arrow { border-right-color: #1a3566; }
+.two      a.feedback span.arrow { border-right-color: #408ac9; }
+.three    a.feedback span.arrow { border-right-color: #74afaf; }
+.four     a.feedback span.arrow { border-right-color: #beca59; }
+.five     a.feedback span.arrow { border-right-color: #d5a007; }
+.six      a.feedback span.arrow { border-right-color: #e54a66; }
+.seven    a.feedback span.arrow { border-right-color: #8b4583; }
+.eight    a.feedback span.arrow { border-right-color: #1a3566; }
+.nine     a.feedback span.arrow { border-right-color: #408ac9; }
+.ten      a.feedback span.arrow { border-right-color: #74afaf; }
+.eleven   a.feedback span.arrow { border-right-color: #beca59; }
+.twelve   a.feedback span.arrow { border-right-color: #d5a007; }
+.thirteen a.feedback span.arrow { border-right-color: #e54a66; }
+.fourteen a.feedback span.arrow { border-right-color: #8b4583; }
+.fifteen  a.feedback span.arrow { border-right-color: #1a3566; }
+.sixteen  a.feedback span.arrow { border-right-color: #408ac9; }
+.seventeen a.feedback span.arrow { border-right-color: #74afaf; }
+.eighteen  a.feedback span.arrow { border-right-color: #beca59; }
+.nineteen   a.feedback span.arrow { border-right-color: #d5a007; }
+.twenty a.feedback span.arrow { border-right-color: #e54a66; }
+.twenty_one a.feedback span.arrow { border-right-color: #c1ac93; }
+
+.one      footer.tabs a.tab.active span { border-bottom-color: #1a3566; }
+.two      footer.tabs a.tab.active span { border-bottom-color: #408ac9; }
+.three    footer.tabs a.tab.active span { border-bottom-color: #74afaf; }
+.four     footer.tabs a.tab.active span { border-bottom-color: #beca59; }
+.five     footer.tabs a.tab.active span { border-bottom-color: #d5a007; }
+.six      footer.tabs a.tab.active span { border-bottom-color: #e54a66; }
+.seven    footer.tabs a.tab.active span { border-bottom-color: #8b4583; }
+.eight    footer.tabs a.tab.active span { border-bottom-color: #1a3566; }
+.nine     footer.tabs a.tab.active span { border-bottom-color: #408ac9; }
+.ten      footer.tabs a.tab.active span { border-bottom-color: #74afaf; }
+.eleven   footer.tabs a.tab.active span { border-bottom-color: #beca59; }
+.twelve   footer.tabs a.tab.active span { border-bottom-color: #d5a007; }
+.thirteen footer.tabs a.tab.active span { border-bottom-color: #e54a66; }
+.fourteen footer.tabs a.tab.active span { border-bottom-color: #8b4583; }
+.fifteen  footer.tabs a.tab.active span { border-bottom-color: #1a3566; }
+.sixteen     footer.tabs a.tab.active span { border-bottom-color: #408ac9; }
+.seventeen   footer.tabs a.tab.active span { border-bottom-color: #74afaf; }
+.eighteen   footer.tabs a.tab.active span { border-bottom-color: #beca59; }
+.nineteen   footer.tabs a.tab.active span { border-bottom-color: #d5a007; }
+.twenty footer.tabs a.tab.active span { border-bottom-color: #e54a66; }
+.twenty_one  footer.tabs a.tab.active span { border-bottom-color: #c1ac93; }
+
+
+.feedback.one .title h1, .feedback.one .title h3, .feedback.one #feedbackForm input[type=submit], .feedback.one #feedbackForm a#nextQuestions, .feedback.one #feedbackForm a#backQuestions                      { color: #1a3566; }
+.feedback.two .title h1, .feedback.two .title h3, .feedback.two #feedbackForm input[type=submit], .feedback.two #feedbackForm a#nextQuestions, .feedback.two #feedbackForm a#backQuestions                     { color: #408ac9; }
+.feedback.three .title h1, .feedback.three .title h3, .feedback.three #feedbackForm input[type=submit], .feedback.three #feedbackForm a#nextQuestions, .feedback.three #feedbackForm a#backQuestions             { color: #74afaf; }
+.feedback.four .title h1, .feedback.four .title h3, .feedback.four #feedbackForm input[type=submit], .feedback.four #feedbackForm a#nextQuestions, .feedback.four #feedbackForm a#backQuestions                { color: #beca59; }
+.feedback.five .title h1, .feedback.five .title h3, .feedback.five #feedbackForm input[type=submit], .feedback.five #feedbackForm a#nextQuestions, .feedback.five #feedbackForm a#backQuestions                  { color: #d5a007; }
+.feedback.six .title h1, .feedback.six .title h3, .feedback.six #feedbackForm input[type=submit], .feedback.six #feedbackForm a#nextQuestions, .feedback.six #feedbackForm a#backQuestions                      { color: #e54a66; }
+.feedback.seven .title h1, .feedback.seven .title h3, .feedback.seven #feedbackForm input[type=submit], .feedback.seven #feedbackForm a#nextQuestions, .feedback.seven #feedbackForm a#backQuestions              { color: #8b4583; }
+.feedback.eight .title h1, .feedback.eight .title h3, .feedback.eight #feedbackForm input[type=submit], .feedback.eight #feedbackForm a#nextQuestions, .feedback.eight #feedbackForm a#backQuestions              { color: #1a3566; }
+.feedback.nine .title h1, .feedback.nine .title h3, .feedback.nine #feedbackForm input[type=submit], .feedback.nine #feedbackForm a#nextQuestions, .feedback.nine #feedbackForm a#backQuestions                  { color: #408ac9; }
+.feedback.ten .title h1, .feedback.ten .title h3, .feedback.ten #feedbackForm input[type=submit], .feedback.ten #feedbackForm a#nextQuestions, .feedback.ten #feedbackForm a#backQuestions                      { color: #74afaf; }
+.feedback.eleven .title h1, .feedback.eleven .title h3, .feedback.eleven #feedbackForm input[type=submit], .feedback.eleven #feedbackForm a#nextQuestions, .feedback.eleven #feedbackForm a#backQuestions          { color: #beca59; }
+.feedback.twelve .title h1, .feedback.twelve .title h3, .feedback.twelve #feedbackForm input[type=submit], .feedback.twelve #feedbackForm a#nextQuestions, .feedback.twelve #feedbackForm a#backQuestions          { color: #d5a007; }
+.feedback.thirteen .title h1, .feedback.thirteen .title h3, .feedback.thirteen #feedbackForm input[type=submit], .feedback.thirteen #feedbackForm a#nextQuestions, .feedback.thirteen #feedbackForm a#backQuestions  { color: #e54a66; }
+.feedback.fourteen .title h1, .feedback.fourteen .title h3, .feedback.fourteen #feedbackForm input[type=submit], .feedback.fourteen #feedbackForm a#nextQuestions, .feedback.fourteen #feedbackForm a#backQuestions  { color: #8b4583; }
+.feedback.fifteen .title h1, .feedback.fifteen .title h3, .feedback.fifteen #feedbackForm input[type=submit], .feedback.fifteen #feedbackForm a#nextQuestions, .feedback.fifteen #feedbackForm a#backQuestions      { color: #1a3566; }
+.feedback.sixteen .title h1, .feedback.sixteen .title h3, .feedback.sixteen #feedbackForm input[type=submit], .feedback.sixteen #feedbackForm a#nextQuestions, .feedback.sixteen #feedbackForm a#backQuestions      { color: #408ac9; }
+.feedback.seventeen .title h1, .feedback.seventeen .title h3, .feedback.seventeen #feedbackForm input[type=submit], .feedback.seventeen #feedbackForm a#nextQuestions, .feedback.seventeen #feedbackForm a#backQuestions  		{ color: #74afaf; }
+.feedback.eighteen .title h1, .feedback.eighteen .title h3, .feedback.eighteen #feedbackForm input[type=submit], .feedback.eighteen #feedbackForm a#nextQuestions, .feedback.eighteen #feedbackForm a#backQuestions          { color: #beca59; }
+.feedback.nineteen .title h1, .feedback.nineteen .title h3, .feedback.nineteen #feedbackForm input[type=submit], .feedback.nineteen #feedbackForm a#nextQuestions, .feedback.nineteen #feedbackForm a#backQuestions          { color: #d5a007; }
+.feedback.twenty .title h1, .feedback.twenty .title h3, .feedback.twenty #feedbackForm input[type=submit], .feedback.twenty #feedbackForm a#nextQuestions, .feedback.twenty #feedbackForm a#backQuestions  { color: #e54a66; }
+.feedback.twenty_one .title h1, .feedback.twenty_one .title h3, .feedback.twenty_one #feedbackForm input[type=submit], .feedback.twenty_one #feedbackForm a#nextQuestions, .feedback.twenty_one #feedbackForm a#backQuestions      { color: #c1ac93; }
+
+
+
+@media screen and (min-width: 350px) {
+	.hospitalContainer { height: 300px; }
+	.hospitalContainer > img { width: 100%; height: auto; }
+}
+@media screen and (min-width: 600px) {
+	.hospitalContainer { height: 350px; }
+}
