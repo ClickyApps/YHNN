@@ -249,7 +249,7 @@ body.feedback { background: #74aaaa url(images/icon_background.png) repeat; back
 .hospital-list .hospitals .hospital.twenty_two { background: #cccccc url(images/hospital_list_map.png) no-repeat center center; background-size: 90px 78px; -webkit-background-size: 90px 78px; -moz-background-size: 90px 78px; -o-background-size: 90px 78px; }
 .hospital-list .hospitals .hospital.twenty_two p {  margin-top: 23px; color: #808080; }
 
-.hospital-list .hospitals .hospital.transfer_team p { font-size: 13px; }
+.hospital-list .hospitals .hospital.transfer_team p { font-size: 12px; line-height: 15px; }
 
 .one      a.feedback span.arrow { border-right-color: #1a3566; }
 .two      a.feedback span.arrow { border-right-color: #408ac9; }

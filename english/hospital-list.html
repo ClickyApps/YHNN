@@ -98,7 +98,7 @@
             <a href="../about-the-transport-team.html" class="hospital twenty_one transfer_team" data-colour="twenty_one">
                 <p>Embrace Yorkshire &amp;<br/> Humber Infant & Children's<br/> Transport Service</p>
             </a><!-- hospital -->
-	    	<a href="#" onclick="var ref = window.open('http://dev.clicky.co.uk/yhnn/maps/network_map.pdf', '_system'); return false;" class="hospital twenty_two">
+	    	<a href="#" onclick="var ref = window.open('http://yhnn.clicky.co.uk/app/maps/network_map.pdf', '_system'); return false;" class="hospital twenty_two">
 	    		<p>View hospitals <br/>on a map</p>
 	    	</a><!-- hospital -->
         </div><!-- hospitals -->
@@ -116,6 +116,7 @@
 				// Upon Choosing Another Hospital
 				$('.hospital-list .hospitals .hospital').click(function(){
                     var chosenHospital = $(this).children('p').text();
+                    chosenHospital = chosenHospital.replace('  ',' ');
 					var chosenColour = $(this).attr('data-colour');
                     window.localStorage.setItem('chosenHospital',chosenHospital);
 					window.localStorage.setItem('chosenColour',chosenColour);
