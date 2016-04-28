@@ -320,6 +320,9 @@ body.feedback { background: #74aaaa url(images/icon_background.png) repeat; back
 
 
 
+
+
+
 @media screen and (min-width: 350px) {
 	.hospitalContainer { height: 300px; }
 	.hospitalContainer > img { width: 100%; height: auto; }
@@ -327,3 +330,4 @@ body.feedback { background: #74aaaa url(images/icon_background.png) repeat; back
 @media screen and (min-width: 600px) {
 	.hospitalContainer { height: 350px; }
 }
+
