@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget 
-	xmlns = "http://www.w3.org/ns/widgets"
+	xmlns 		= "http://www.w3.org/ns/widgets"
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "uk.co.clicky.yhnn"
-	version     = "1.0.6">
+	version     = "1.0.7">
 	
 	<!-- App Details That Are Shown on the iOS App Store -->
 	<name>YHNN</name>
@@ -24,6 +24,7 @@
 	<preference name="android-installLocation" value="auto"/><!-- Set Android Additonal Properties -->
 	<preference name="DisallowOverscroll" value="true"/><!-- Stop Overscrolling on Application -->
 	<preference name="webviewbounce" value="false"/><!-- Stop Screen Bounce on Scroll -->
+	<preference name="stay-in-webview" value="false"/><!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
 	
 	<!-- Disable All Rotations -->
 	<gap:config-file platform="ios" parent="UISupportedInterfaceOrientations" overwrite="true">
