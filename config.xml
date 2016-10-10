@@ -3,7 +3,7 @@
 	xmlns 		= "http://www.w3.org/ns/widgets"
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "uk.co.clicky.yhnn"
-	version     = "1.0.8" 
+	version     = "1.0.8"
 	android-versionCode="29">
 
 	<!-- App Details That Are Shown on the iOS App Store -->
@@ -35,7 +35,8 @@
 	</gap:config-file>
 
 	<!-- Install InAppBrowser Plugin (Set Versions to Disallow Updates Which May Render Differently) -->
-	<gap:plugin name="org.apache.cordova.inappbrowser"/>
+	<!-- <gap:plugin name="org.apache.cordova.inappbrowser"/> -->
+	<plugin name="cordova-plugin-inappbrowser"/>
 
 	<!-- Install Status Bar Control Plugin - Removes Status Bar in iOS 7 (Set Versions to Disallow Updates Which May Render Differently) -->
 	<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
