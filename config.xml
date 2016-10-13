@@ -3,8 +3,8 @@
 	xmlns 		= "http://www.w3.org/ns/widgets"
 	xmlns:gap   = "http://phonegap.com/ns/1.0"
 	id          = "uk.co.clicky.yhnn"
-	version     = "1.0.8"
-	android-versionCode="29">
+	version     = "1.0.9"
+	android-versionCode="30">
 
 	<!-- App Details That Are Shown on the iOS App Store -->
 	<name>YHNN</name>
