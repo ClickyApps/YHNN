@@ -249,12 +249,10 @@
 					$.ajax({
 					  type: "POST",
 					  url: 'http://yhnn.clicky.co.uk/processing/feedback.php',
-					  	dataType: 'json',
-					  	crossDomain: true,					  
 					  data: { hospital : hospital, question_1 : question_1, question_2 : question_2, question_3 : question_3, question_4 : question_4, question_5 : question_5, question_6 : question_6, question_7 : question_7 },
 					  success: function(returnData){
 					  	if ( returnData == 'Error' ) {
-						  	alert('Giving feedback requires an internet connection.(Server)');
+						  	alert('Giving feedback requires an internet connection.');
 						} else {
 							$('#feedbackForm').fadeOut('fast');
 							$('.feedback .questions > p').text('Thanks for giving us feedback. You will now be taken back to the home screen.');
